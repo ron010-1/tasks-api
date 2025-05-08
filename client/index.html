@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gerenciador de Tarefas</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header>
+  <h1>Gerenciador de Tarefas</h1>
+</header>
+
+<main>
+  <section>
+    <h2>Criar Usuário</h2>
+    <input type="text" id="firstName" placeholder="Nome" />
+    <input type="text" id="lastName" placeholder="Sobrenome" />
+    <button onclick="criarUsuario()">Salvar Usuário</button>
+  </section>
+
+  <section>
+    <h2>Login por ID</h2>
+    <input type="text" id="userId" placeholder="ID do usuário" />
+    <button onclick="fazerLogin()">Entrar</button>
+  </section>
+
+  <section id="taskSection" style="display:none;">
+    <h2>Criar Tarefa</h2>
+    <input type="text" id="titulo" placeholder="Título da tarefa" />
+    <input type="text" id="descricao" placeholder="Descrição" />
+    <select id="tipo">
+      <option value="Pessoal">Pessoal</option>
+      <option value="Profissional">Profissional</option>
+    </select>
+    <button onclick="criarTarefa()">Criar Tarefa</button>
+  
+    <h3 style="margin-top: 2rem;">Minhas Tarefas</h3>
+    <ul id="listaTarefas"></ul>
+  </section>
+  
+</main>
+
+<footer>
+  <p>Desenvolvido por Ron</p>
+</footer>
+
+<script src="./scripts.js"></script>
+
+</body>
+</html>
