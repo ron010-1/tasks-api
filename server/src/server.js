@@ -7,4 +7,4 @@ app.get('/', (req, res) => {
 });
 
 app.use('/tasks', TaskRouter);
-app.use('/tasks', UserRouter);
+app.use('/users', UserRouter);
